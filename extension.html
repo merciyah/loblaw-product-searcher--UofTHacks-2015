@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+	<link href='style.css' rel='stylesheet' type='text/css'> 
+
+	<meta name="viewport" content="width=device-width" /> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+
+	<title>Wiki</title> 
+<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="feed.js"></script>
+
+
+	<base target="_blank">
+
+</head>
+
+
+<body bgcolor="#FFF"> 
+	<table class="body-wrap"> 
+		<tr> 
+			<td class="container"> 
+				<div class="content"> 
+					<div id="pattern" class="pattern"> 
+
+
+<form action="http://www.loblaws.ca/en_CA/search-page.query@food.html?" method="post">
+<select name="type" onchange="SubmitForm(this)">
+<option value="FirstChoice">Choice 1</option>
+<option value="SecondChoice">Choice 2</option>
+<option value="ThirdChoice">Choice 3</option>
+</select></form>
+<script type="text/javascript">
+	function SubmitForm(select) {
+		var form = select.form;
+		var action = form.action;
+		var choice = select.options[select.selectedIndex].value;
+		action += "&type=" + choice;
+		form.action = action;
+		form.submit();
+	}
+</script>
+     
+
+
+					</div> 
+					
+				</div> 
+			</td>
+		</tr> 
+	</table> 
+</body>
+</html>
+
